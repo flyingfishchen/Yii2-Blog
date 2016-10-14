@@ -5,9 +5,9 @@
 - php5.4+ 
 
 ## Introduction
-此为meizu海外博客系统，非常简易，
-前台地址：http://press.meizu.com
-后台地址：http://press-manage.meizu.com
+此为meizu海外博客系统，非常简易，  
+前台地址：http://press.meizu.com  
+后台地址：http://press-manage.meizu.com  
 附件访问地址：http://press.attach.meizu.com
 
 nginx、Apache配置文件见/vagrant目录
