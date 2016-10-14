@@ -1,0 +1,23 @@
+{
+  "name": "press.meizu.com",
+  "authors": [
+    "huster.chenming <huster.chenming@qq.com>"
+  ],
+  "description": "meizu oversea blog Package",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap-treeview": ">= 1.2.0",
+    "xss": "^0.2.13",
+    "jquery.switcher": "^1.2.4",
+    "moment": "^2.14.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "fancybox": "^2.1.5",
+    "selectize": "^0.12.3"
+  },
+  "devDependencies": {
+    "layer": "2.x"
+  }
+}

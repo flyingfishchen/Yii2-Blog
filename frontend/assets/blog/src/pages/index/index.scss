@@ -1,0 +1,118 @@
+.page-wrapper {
+	padding: 0 0 88px 0;
+	width: 100%;
+	min-width: 1240px;
+	background-color: #fafafa;
+}
+.banner {
+	padding-top: 18px;
+	.banner-title {
+		height: 56px;
+		line-height: 56px;
+		color: #333333;
+		font-size: 24px;
+	}
+	.banner-pic img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.articles {
+	// padding-top: 34px;
+	.article-title a {color:#01baf2;}
+	.article-title a:hover {text-decoration: none;}
+	.article-title {
+		padding: 0 15px;
+		background: #f6f6f7;
+		color: #01baf2;
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.article-fragment {
+		padding: 15px 15px;
+		color: #969696;
+		line-height: 28px;
+		font-size: 16px;
+		background-color: #fff;
+	}
+}
+
+.page-wrapper {
+	.pagination-wrap {
+		margin-top: 18px;
+		text-align: center;
+	}
+
+	.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+	    color: #777;
+	    cursor: not-allowed;
+	    background: none;
+		color: #ddd;
+	}
+
+	.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	    z-index: 3;
+	    color: #333;
+	    background: none;
+	    border: none;
+	}
+
+	// pagination
+	.pagination > li > a, .pagination > li > span {
+		padding: 5px 22px;
+		border: none;
+		background: none;
+		color: #333;
+	}
+
+	.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	    z-index: 2;
+	    color: #fff;
+	    cursor: default;
+	    background-color: #1c8ef1;
+	    border: none;
+	    border-radius: 15px;
+	    box-shadow: 0 3px 10px #64b0f1;
+	}	
+
+	.pagination>.next, .pagination>.prev {
+		line-height: 20px;
+	}
+	.pagination>.next>a, .pagination>.next>span, .pagination>.prev>a, .pagination>.prev>span {
+		position: relative;
+		color: #fafafa!important;
+		width: 8px;
+		height: 30px;
+		padding: 5px 0;
+		margin: 0 20px;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			content: '';
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background: url(data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMxaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjUtYzAyMSA3OS4xNTU3NzIsIDIwMTQvMDEvMTMtMTk6NDQ6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjUwMEU5OTdEODk0RDExRTY5NzVBQUQxMDlCNDNENUY4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjUwMEU5OTdFODk0RDExRTY5NzVBQUQxMDlCNDNENUY4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTAwRTk5N0I4OTREMTFFNjk3NUFBRDEwOUI0M0Q1RjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTAwRTk5N0M4OTREMTFFNjk3NUFBRDEwOUI0M0Q1RjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMDAwMDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAAOABADAREAAhEBAxEB/8QAVQABAQAAAAAAAAAAAAAAAAAABAoBAQAAAAAAAAAAAAAAAAAAAAAQAAEFAQEBAQEAAAAAAAAAAAUCAwQGBwEIFAkTEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwClwNYj/wCoGgE1V84ZpvgHFNJnV8vwSTm12/8ArTX82OIQRDmEwnolioeB0GywE/1hvfITtE5nnXUNQEJS8CjdgPfmNfB0g2cL3HwJtGkwAA9osSm2G++Sde0o8poaLCcmPzLDe8B0CzkFcbgs/WUqpB/vWkOj1qSwBbKMgC/Xel6V+ftiEWnYqwcpwr3X5vSxYQmQahGOdjRodlb0tYNWY0r1bRgS+S1tInuTygtvkYvGR1UaRwE18bCK+t8y0r35YA9U1qzH7iJ8J+cOsHjeQ5k0E+mNMtEnSmgvMxufrC8gEdltMuz0ThQlxUYPGc6mVI6H/9k=) no-repeat;
+			background-position: 0px center;			
+		}
+	}
+
+	.pagination>.next>a, .pagination>.next>span {
+		&:after {
+			background-position: -8px center;
+		}
+	}
+	.pagination > .disabled {
+		&.next>a, &.next>span, &.prev>a, &.prev>span {
+			opacity: 0.5;
+		}
+	}
+}
+
+
+
+

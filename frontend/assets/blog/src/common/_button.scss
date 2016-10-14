@@ -1,0 +1,82 @@
+
+.btn-video {
+    width: 134px;
+    outline: 0;
+    border: 2px solid #515151;
+    border-radius: 50px;
+    padding: 10px 0;
+    font-size: 15px;
+    text-indent: 20px;
+    background: #fff url(images/triangle-r.png) no-repeat 26px 14px;
+    cursor: pointer
+}
+.btn-video-blue {
+    color: #00a8eb;
+    border: 2px solid #00a8eb;
+    background: #fff url(images/triangle-r-blue.png) no-repeat 26px 14px
+}
+.btn-video-gold {
+    color: #8f6a38;
+    border: 2px solid #8f6a38;
+    background: #fff url(images/triangle-r-gold.png) no-repeat 26px 14px
+}
+.button {
+    outline: 0;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+// .button::-moz-focus-inner {
+//     padding: 0;
+//     border: 0
+// }
+.button {
+    font-family: inherit;
+    font-size: 100%;
+    *font-size: 90%;
+    *overflow: visible;
+    padding: .6em 1.2em;
+    color: #444;
+    color: rgba(0, 0, 0, .8);
+    *color: #444;
+    border: 1px solid #999;
+    border: none rgba(0, 0, 0, 0);
+    background-color: #E6E6E6;
+    text-decoration: none
+}
+.button-hover, .button:focus, .button:hover {
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1))
+}
+.button-active, .button:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset
+}
+.button-disabled, .button-disabled:active, .button-disabled:focus, .button-disabled:hover, .button[disabled] {
+    border: none;
+    background-image: none;
+    // filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: .4;
+    -moz-opacity: .4;
+    opacity: .4;
+    cursor: not-allowed;
+    box-shadow: none
+}
+.button-hidden {
+    display: none
+}
+
+.button-primary, .button-selected, a.button-primary, a.button-selected {
+    background-color: #3db1fa;
+    color: #fff
+}
